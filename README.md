@@ -30,7 +30,7 @@ Redhat-derived or Debian-derived Linux flavors.
 ```
 To run Weenix under gdb, compilation should be done after setting `GDB_WAIT=1` in Config file
 
-## Weenix Kernel
+## Implementation
 
 Developed the core of a small Unix-like operating system. Iteratively implemented:
 
@@ -39,6 +39,8 @@ Part 1: Threads, Processes, and synchronization primitives
 Part 2: Virtual File System
 
 Part 3: Virtual Memory and system calls.
+
+Detailed documentation covering data structures, concepts, and design diagrams is provided in the `docs/` directory.
 
 ## Execution output
 
@@ -49,7 +51,7 @@ Part 3: Virtual Memory and system calls.
 
 <img src="outputs/images/kernel-start-with-gdb.png" alt="Weenix kernel started with debugger" width="800" />
 
-3. kshell, after part 1 of kernel development
+3. kshell, after part 1 of kernel development (with clean halt)
 
 <img src="outputs/images/working%20kernel.png" alt="Kshell sample after part 1" width="600" />
 Detailed description of tests run and output logs (faber and sunghan in this image) are present in `outputs/Outputs_part1.pdf`
