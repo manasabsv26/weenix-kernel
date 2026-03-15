@@ -42,6 +42,8 @@ Part 3: Virtual Memory and system calls.
 
 Detailed documentation covering data structures, concepts, and design diagrams is provided in the `docs/` directory.
 
+Part 1 doc: https://github.com/manasabsv26/weenix-kernel/blob/main/docs/Kernel%20Project%20Design%20Part%201.pdf
+
 ## Execution output
 
 1. QEMU terminal
