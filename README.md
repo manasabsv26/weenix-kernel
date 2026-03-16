@@ -47,11 +47,13 @@ Detailed description of tests run and output logs (faber and sunghan in this ima
 
 6. `/usr/bin/vfstests`, `/usr/bin/memtest`, `/usr/bin/fork-and-wait`, `usr/bin/eatmem` tests running expectedly
 
-<img src="outputs/images/usr-bin-memtest.png" alt="/sbin/init Part 3" width="600" />
+<img src="outputs/images/usr-bin-vfstest.png" alt="/usr/bin/vfstests Part 3" width="600" />
 
-<img src="outputs/images/usr-bin-vfstest.png" alt="/sbin/init Part 3" width="600" />
+<img src="outputs/images/usr-bin-memtest.png" alt="/usr/bin/memtest Part 3" width="600" />
 
-<img src="outputs/images/usr-bin-eatmem.png" alt="/sbin/init Part 3" width="600" />
+<img src="outputs/images/fork-and-wait.png" alt="/usr/bin/fork-and-wait Part 3" width="600" />
+
+<img src="outputs/images/usr-bin-eatmem.png" alt="/usr/bin/fork-and-wait Part 3" width="600" />
 
 7. This log shows vmareas in the process’s vmmap, each representing a virtual address range with its permissions and the memory object backing that region.
 
