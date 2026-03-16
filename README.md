@@ -1,34 +1,6 @@
 # weenix-kernel
-Documentation and results from my work on the weenix OS kernel development. 
 
-## Setup
-
-Quick instructions for getting Weenix to run on
-Redhat-derived or Debian-derived Linux flavors.  
-
-1. Download and install dependencies.
-
-   On recent versions of Ubuntu or Debian, you can simply run:
-   ```
-   sudo apt-get install git-core build-essential gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub xorriso
-   ```
-   or on Redhat:
-   ```
-   $ sudo yum install git-core gcc gdb qemu genisoimage make python python-argparse cscope xterm bash grub2-tools xorriso
-   ```
-2. Compile Weenix:
-   ```
-   make
-   ```
-3. Invoke Weenix:
-```
-   $ ./weenix -n
-```
-   or, to run Weenix under gdb, run:
-```
-   $ ./weenix -n -d gdb
-```
-To run Weenix under gdb, compilation should be done after setting `GDB_WAIT=1` in Config file
+Developed core components of the Weenix educational OS kernel as part of the CSCI-402 Operating Systems course at the University of Southern California (USC); the source code cannot be publicly shared due to course academic policies.
 
 ## Implementation
 
@@ -53,10 +25,34 @@ Part 1 doc: https://github.com/manasabsv26/weenix-kernel/blob/main/docs/Kernel%2
 
 <img src="outputs/images/kernel-start-with-gdb.png" alt="Weenix kernel started with debugger" width="800" />
 
-3. kshell, after part 1 of kernel development (with clean halt)
+3. kshell, after part 1 of kernel development - threads, processes, scheduler, mutex locks implementation (with clean halt)
 
 <img src="outputs/images/working%20kernel.png" alt="Kshell sample after part 1" width="600" />
-Detailed description of tests run and output logs (faber and sunghan in this image) are present in `outputs/Outputs_part1.pdf`
 
+Detailed description of tests run and output logs (faber and sunghan in this image) are present in  `outputs/Outputs_part1.pdf`
 
+4. kshell, after part 2 of kernel development - Virtual File System
 
+<img src="outputs/images/vfs-kshell.png" alt="Kshell sample after part 2" width="600" />
+
+5. VFS and faber_thread tests running expectedly
+
+<img src="outputs/images/vfstest.png" alt="VFS tests" width="600" />
+
+<img src="outputs/images/thrtest-1.png" alt="VFS tests" width="600" />
+
+6. `/sbin/init`, after part 3 of kernel development - Virtual Memory Map, System calls
+
+<img src="outputs/images/part3-sbin-init.png" alt="/sbin/init Part 3" width="600" />
+
+6. `/usr/bin/vfstests`, `/usr/bin/memtest`, `/usr/bin/fork-and-wait`, `usr/bin/eatmem` tests running expectedly
+
+<img src="outputs/images/usr-bin-memtest.png" alt="/sbin/init Part 3" width="600" />
+
+<img src="outputs/images/usr-bin-vfstest.png" alt="/sbin/init Part 3" width="600" />
+
+<img src="outputs/images/usr-bin-eatmem.png" alt="/sbin/init Part 3" width="600" />
+
+7. This log shows vmareas in the process’s vmmap, each representing a virtual address range with its permissions and the memory object backing that region.
+
+<img src="outputs/images/vmmap_logs.png" alt="/sbin/init Part 3" width="600" />
